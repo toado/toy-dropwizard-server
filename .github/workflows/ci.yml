@@ -1,9 +1,9 @@
 name: continuous-integration-example
 
 on: 
-	push:
-		branches:
-			- master
+push:
+  branches:
+    - main
 
 job:
 	build-and-test-please:
