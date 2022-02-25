@@ -3,10 +3,12 @@ name: continuous-integration-example
 on:
   push:
       branches: [ main ]
+  pull_requests:
+      branches: [ main ]
       
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v2
       
